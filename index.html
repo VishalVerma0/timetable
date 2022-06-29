@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet">
+
+	<title>
+		Timetable Generator
+	</title>
+</head>
+
+<body>
+	<h1>Intact Timetable Generator</h1>
+	<h2>Select Courses</h2>
+
+	<div id="school-tabs" class="buttons">
+	</div>
+
+	<div id="school-list">
+	</div>
+
+	<div class="buttons">
+		<button type="button" id="gen-code">Generate with Codes</button>
+		<button type="button" id="gen-nick">Generate with Sub. Nicknames & Teacher Name</button>
+		<button id="reset">Reset</button>
+	</div>
+
+	<h2>Generated Timetable</h2>
+	<table>
+		<tr>
+			<th scope="col">Day</th>
+			<th>Section</th>
+			<th scope="col">08:30-09:00</th>
+			<th scope="col">09:00-09:30</th>
+			<th scope="col">10:00-10:30</th>
+			<th scope="col">11:00-11:30</th>
+			<th scope="col">11:30-12:00</th>
+			<th scope="col">12:00-12:30</th>
+			<th scope="col">12:30-14:30</th>
+			<th scope="col">14:30-16:30</th>
+		</tr>
+
+
+		<tr>
+
+			<th scope="row" rowspan="2">Monday</th>
+			<th class="x">A1</th>
+			<td class="A">A</td>
+			<td class="B">B</td>
+			<td class="C">D</td>
+			<td class="D">E</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">C</td>
+			<td class="G">G</td>
+			<td class="M">M</td>
+
+
+
+
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="H">J</td>
+			<td class="E">I</td>
+			<td class="I">H</td>
+			<td class="J">D</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">E</td>
+			<td class="M">M</td>
+			<td class="M">M</td>
+
+		</tr>
+
+		<tr>
+			<th scope="row" rowspan="2">Tuesday</th>
+			<th class="x">A1</th>
+			<td class="D">A</td>
+			<td class="C">B</td>
+			<td class="B">C</td>
+			<td class="A">E</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">D</td>
+			<td class="M">M</td>
+			<td class="F">F</td>
+
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="J">H</td>
+			<td class="I">I</td>
+			<td class="E">E</td>
+			<td class="H">D</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">J</td>
+			<td class="M">M</td>
+			<td class="M">M</td>
+		</tr>
+
+		<tr>
+			<th scope="row" rowspan="2">Wednesday</th>
+			<th class="x">A1</th>
+			<td class="A">A</td>
+			<td class="B">B</td>
+			<td class="C">E</td>
+			<td class="D">D</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">C</td>
+			<td class="M">G</td>
+			<td class="M">F</td>
+
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="H">J</td>
+			<td class="E">H</td>
+			<td class="I">D</td>
+			<td class="J">E</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">I</td>
+			<td class="L">L</td>
+			<td class="M">K</td>
+		</tr>
+		<tr>
+			<th scope="row" rowspan="2">Thursday</th>
+			<th class="x">A1</th>
+			<td class="D">A</td>
+			<td class="C">C</td>
+			<td class="B">D</td>
+			<td class="A">B</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">E</td>
+			<td class="M">G</td>
+			<td class="M">F</td>
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="H">H</td>
+			<td class="E">I</td>
+			<td class="I">E</td>
+			<td class="J">D</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">B</td>
+			<td class="K">K</td>
+			<td class="M">L</td>
+
+		</tr>
+
+		<tr>
+			<th scope="row" rowspan="2">Friday</th>
+			<th class="x">A1</th>
+			<td class="A">B</td>
+			<td class="B">C</td>
+			<td class="C">D</td>
+			<td class="D">E</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">A</td>
+			<td class="M">F</td>
+			<td class="M">G</td>
+
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="H">D</td>
+			<td class="E">E</td>
+			<td class="I">I</td>
+			<td class="J">J</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">H</td>
+			<td class="M">K</td>
+			<td class="M">L</td>
+		</tr>
+		<tr>
+			<th scope="row" rowspan="2">Saturday</th>
+			<th class="x">A1</th>
+			<td class="D">A</td>
+			<td class="C">B</td>
+			<td class="B">E</td>
+			<td class="A">D</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="D">C</td>
+			<td class="M">G</td>
+			<td class="M">F</td>
+
+		</tr>
+		<tr>
+			<th class="x">A2</th>
+			<td class="J">H</td>
+			<td class="I">I</td>
+			<td class="E">D</td>
+			<td class="H">E</td>
+			<td class="lunch">Lunch Break</td>
+			<td class="E">J</td>
+			<td class="M">L</td>
+			<td class="M">K</td>
+		</tr>
+	</table>
+
+	<div class="buttons">
+		<button type="button" id="pdf">Download PDF</button>
+	</div>
+	<footer style="margin-top: 20px ;">
+	
+	</footer>
+
+	<script src="scripts/jspdf.min.js"></script>
+	<script src="scripts/jspdf.plugin.autotable.js"></script>
+	<script src="scripts/data.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
